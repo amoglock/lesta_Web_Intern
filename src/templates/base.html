@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{ title }}</title>
+    <link href="{{ url_for('static', path='/styles.css') }}" rel="stylesheet" />
+    <meta charset="utf-8" />
+</head>
+<body>
+<header>
+    <div class="logo">
+        <h2>TF-IDF</h2>
+    </div>
+</header>
+    {% block content %}
+    {% endblock %}
+</body>
+</html>

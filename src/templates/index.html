@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="load">
+<h3>Загрузка текстовых файлов</h3>
+</div>
+<div style="margin: 10px 0 10px 40px;">
+<form action="uploadfiles" enctype="multipart/form-data" method="post">
+    <div style="margin: 20px 0px 10px 0px;">
+    <p>
+        Выберите файлы:<br>
+        </div>
+        <input type="file" name="files"  multiple accept=".txt">
+    </p>
+    <div style="margin: 20px 0px 10px 0px">
+    <input type="submit" value="Загрузить"/>
+        </div>
+</form>
+    </div>
+{% endblock %}

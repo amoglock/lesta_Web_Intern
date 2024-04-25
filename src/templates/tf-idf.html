@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<table class="table">
+    <caption>
+    <h3>TF-IDF для файла:</h3>
+  </caption>
+    <thead>
+        <tr>
+            <th scope="col">Слово</th>
+            <th scope="col">Tf</th>
+            <th scope="col">Idf</th>
+        </tr>
+    </thead>
+    <tbody>
+    {% for r in result %}
+        <tr>
+            <th scope="row">{{ r }}</th>
+            <td>{{ result[r]["tf"]  }}</td>
+            <td>{{ result[r]["idf"]  }}</td>
+        </tr>
+    </tbody>
+    {% endfor %}
+</table>
+
+<form action="/" enctype="multipart/form-data" method="get" style="margin: 15px;">
+    <input type="submit" value="На главную"/>
+</form>
+{% endblock %}

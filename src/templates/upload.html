@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="load">
+        <h2>Загружены файлы:</h2>
+    </div>
+    {% for file in files %}
+        <div class="filename">
+            <p>{{ file.filename }}:</p>
+        </div>
+        <div class="content">
+            <p>{{ text[file.filename] }}</p>
+        </div>
+    {% endfor %}
+    <form action="/tf-idf" enctype="multipart/form-data" method="get" style="margin: 15px;">
+      <label for="file">Выберите файл:</label>
+      <select id="file" name="file">
+          {% for file in files %}
+            <option value="{{ file.filename }}">{{ file.filename }}</option>
+          {% endfor %}
+      </select>
+        <button>Провести анализ этого файла</button>
+</form>
+
+<form action="/" enctype="multipart/form-data" method="get" style="margin: 15px;">
+    <input type="submit" value="Отменить и на главную"/>
+</form>
+{% endblock %}
