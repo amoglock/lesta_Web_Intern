@@ -43,7 +43,7 @@ ___
 На начальной странице загружаются текстовые файлы. Приложение работает только с форматом .txt.
 
 <div style="align-items: center;">
-  <a href="./lestaWeb/images/main_page.png" style="display: block; margin: 0 auto;">
+  <a href="./images/main_page.png" style="display: block; margin: 0 auto;">
     <img src="./images/main_page.png" alt="Начальная страница" width="200"/>
   </a>
 
@@ -51,13 +51,13 @@ ___
 Выбрать файл для анализа нужно из всплывающего меню.
 
 <div style="align-items: center;">
-  <a href="./lestaWeb/images/choosing_file.png" style="display: block; margin: 0 auto;">
+  <a href="./images/choosing_file.png" style="display: block; margin: 0 auto;">
     <img src="./images/choosing_file.png" alt="Начальная страница" width="200"/>
   </a>
 
 Результат выдается в виде таблицы.
 
 <div style="align-items: center;">
-  <a href="./lestaWeb/images/result_table.png" style="display: block; margin: 0 auto;">
+  <a href="./images/result_table.png" style="display: block; margin: 0 auto;">
     <img src="images/result_table.png" alt="Начальная страница" width="200"/>
   </a>
