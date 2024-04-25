@@ -17,7 +17,7 @@ ___
 
 1. Клонировать репозиторий:
     ```
-    git clone git@github.com:
+    git clone https://github.com/amoglock/lesta_Web_Intern.git
     ```
 2. Установить и активировать виртуальное окружение:
     ```
